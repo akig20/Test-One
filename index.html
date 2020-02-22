@@ -1,26 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-    <title>Logga in</title>
-</head>
 <body>
 
-    <div class="login-page">
-        <div class="form">
-          <form class="login-form">
-            <input id="loginName" type="text" placeholder="username"/>
-            <input id="loginPass" type="password" placeholder="password"/>
-            <button id="loginButton">login</button>
-          </form>
+  <form id="loginForm" action="login_submit" method="get" accept-charset="utf-8">
+    <fieldset>
+        <div data-role="fieldcontain">
+            <label for="username">User</label>
+            <input type="text" name="username" id="username" value=""  />
         </div>
-      </div>
 
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <div data-role="fieldcontain">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" value=""  />
+        </div>
+
+        <button type="submit" data-theme="g" name="submit" >Login</button>
+
+    </fieldset>
+</form>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
 
 </body>
-</html>
